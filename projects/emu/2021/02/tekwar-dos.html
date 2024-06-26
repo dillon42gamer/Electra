@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html class="v2" dir="ltr" lang="en">
+
+<!-- Mirrored from www.retrogames.onl/2021/02/tekwar-dos.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 May 2024 17:46:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script src="../../cdn-cgi/apps/head/tGHoTbh7ulZkwz4EajxylGVA4gE.js"></script><link href="../../../www.blogger.com/static/v1/widgets/1539816172-widget_css_mobile_2_bundle.css" rel="stylesheet" type="text/css" />
+<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport" />
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta content="blogger" name="generator" />
+<link href="../../favicon.ico" rel="icon" type="image/x-icon" />
+<link href="tekwar-dos.html" rel="canonical" />
+<link rel="alternate" type="application/atom+xml" title="🕹&#65039; Play Retro Games Online - Atom" href="../../feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="🕹&#65039; Play Retro Games Online - RSS" href="../../feeds/posts/default9522?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="🕹&#65039; Play Retro Games Online - Atom" href="https://www.blogger.com/feeds/4666717332149573666/posts/default" />
+<link rel="alternate" type="application/atom+xml" title="🕹&#65039; Play Retro Games Online - Atom" href="../../feeds/6075610396141844826/comments/default.html" />
+
+<link href="../../../blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXwEwIm2OQ6udQ5GBB9Up60xZjqAn919BQdIUdQXl/s320/tekwar-640.png" rel="image_src" />
+<meta content="Play William Shatner&#39;s TekWar / Tek War game online MS-DOS (DOSBox) emulator." name="description" />
+<meta content="https://www.retrogames.onl/2021/02/tekwar-dos.html" property="og:url" />
+<meta content="TekWar (DOS)" property="og:title" />
+<meta content="Play William Shatner&#39;s TekWar / Tek War game online MS-DOS (DOSBox) emulator." property="og:description" />
+<meta content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXwEwIm2OQ6udQ5GBB9Up60xZjqAn919BQdIUdQXl84ponZ7reHjqkVysydLrnr_iBiEV95BgnRsyRFQcju0OhFYQtrwlT_JCnVp0JKkfa8n3GDyP9oD0_xC8KPx16FCwSqz2ScE_Rouo/w1200-h630-p-k-no-nu/tekwar-640.png" property="og:image" />
+<title>🕹&#65039; Play Retro Games Online: TekWar (DOS)</title>
+<style id="page-skin-1" type="text/css"><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Simple
+Designer: Blogger
+URL:      www.blogger.com
+----------------------------------------------- */
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #cccccc;
+background: #292929 none repeat scroll top left;
+padding: 0 10px 10px 10px;
+}
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
+}
+h2 {
+font-size: 22px;
+}
+a:link {
+text-decoration:none;
+color: #dd7700;
+}
+a:visited {
+text-decoration:none;
+color: #cc6600;
+}
+a:hover {
+text-decoration:underline;
+color: #cc6600;
+}
+.body-fauxcolumn-outer .fauxcolumn-inner {
+background: transparent none repeat scroll top left;
+_background-image: none;
+}
+.body-fauxcolumn-outer .cap-top {
+position: absolute;
+z-index: 1;
+height: 400px;
+width: 100%;
+}
+.body-fauxcolumn-outer .cap-top .cap-left {
+width: 100%;
+background: transparent none repeat-x scroll top left;
+_background-image: none;
+}
+.content-outer {
+-moz-box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 10px #333333;
+box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+margin-bottom: 1px;
+}
+.content-inner {
+padding: 10px 10px;
+}
+.content-inner {
+background-color: #333333;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+background: transparent none repeat-x scroll 0 -400px;
+_background-image: none;
+}
+.Header h1 {
+font: normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #ffffff;
+text-shadow: -1px -1px 1px rgba(0, 0, 0, .2);
+}
+.Header h1 a {
+color: #ffffff;
+}
+.Header .description {
+font-size: 140%;
+color: #aaaaaa;
+}
+.header-inner .Header .titlewrapper {
+padding: 22px 30px;
+}
+.header-inner .Header .descriptionwrapper {
+padding: 0 30px;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner .section:first-child {
+border-top: 1px solid #333333;
+}
+.tabs-inner .section:first-child ul {
+margin-top: -1px;
+border-top: 1px solid #333333;
+border-left: 0 solid #333333;
+border-right: 0 solid #333333;
+}
+.tabs-inner .widget ul {
+background: #222222 none repeat-x scroll 0 -800px;
+_background-image: none;
+border-bottom: 1px solid #333333;
+margin-top: 0;
+margin-left: -30px;
+margin-right: -30px;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: .6em 1em;
+font: normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #999999;
+border-left: 1px solid #333333;
+border-right: 0 solid #333333;
+}
+.tabs-inner .widget li:first-child a {
+border-left: none;
+}
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+color: #ffffff;
+background-color: #000000;
+text-decoration: none;
+}
+/* Columns
+----------------------------------------------- */
+.main-outer {
+border-top: 0 solid #404040;
+}
+.fauxcolumn-left-outer .fauxcolumn-inner {
+border-right: 1px solid #404040;
+}
+.fauxcolumn-right-outer .fauxcolumn-inner {
+border-left: 1px solid #404040;
+}
+/* Headings
+----------------------------------------------- */
+div.widget > h2,
+div.widget h2.title {
+margin: 0 0 1em 0;
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #ffffff;
+}
+/* Widgets
+----------------------------------------------- */
+.widget .zippy {
+color: #999999;
+text-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
+}
+.widget .popular-posts ul {
+list-style: none;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+}
+.date-header span {
+background-color: transparent;
+color: #cccccc;
+padding: inherit;
+letter-spacing: inherit;
+margin: inherit;
+}
+.main-inner {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.main-inner .column-center-inner {
+padding: 0 15px;
+}
+.main-inner .column-center-inner .section {
+margin: 0 15px;
+}
+.post {
+margin: 0 0 25px 0;
+}
+h3.post-title, .comments h4 {
+font: normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+margin: .75em 0 0;
+}
+.post-body {
+font-size: 110%;
+line-height: 1.4;
+position: relative;
+}
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
+.BlogList .item-thumbnail img {
+padding: 0;
+background: #111111;
+border: 1px solid #111111;
+-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+}
+.post-body img, .post-body .tr-caption-container {
+padding: 1px;
+}
+.post-body .tr-caption-container {
+color: #cccccc;
+}
+.post-body .tr-caption-container img {
+padding: 0;
+background: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+}
+.post-header {
+margin: 0 0 1.5em;
+line-height: 1.6;
+font-size: 90%;
+}
+.post-footer {
+margin: 20px -2px 0;
+padding: 5px 10px;
+color: #888888;
+background-color: #303030;
+border-bottom: 1px solid #444444;
+line-height: 1.6;
+font-size: 90%;
+}
+#comments .comment-author {
+padding-top: 1.5em;
+border-top: 1px solid #404040;
+background-position: 0 1.5em;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+#comments .avatar-image-container img {
+border: 1px solid #111111;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #999999;
+border-bottom: 1px solid #999999;
+}
+.comments .comment-thread.inline-thread {
+background-color: #303030;
+}
+.comments .continue {
+border-top: 2px solid #999999;
+}
+/* Accents
+---------------------------------------------- */
+.section-columns td.columns-cell {
+border-left: 1px solid #404040;
+}
+.blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.blog-pager-older-link, .home-link,
+.blog-pager-newer-link {
+background-color: #333333;
+padding: 5px;
+}
+.footer-outer {
+border-top: 0 dashed #bbbbbb;
+}
+/* Mobile
+----------------------------------------------- */
+body.mobile  {
+background-size: auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+.mobile .body-fauxcolumn-outer .cap-top {
+background-size: 100% auto;
+}
+.mobile .content-outer {
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+}
+.mobile .tabs-inner .widget ul {
+margin-left: 0;
+margin-right: 0;
+}
+.mobile .post {
+margin: 0;
+}
+.mobile .main-inner .column-center-inner .section {
+margin: 0;
+}
+.mobile .date-header span {
+padding: 0.1em 10px;
+margin: 0 -10px;
+}
+.mobile h3.post-title {
+margin: 0;
+}
+.mobile .blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.mobile .footer-outer {
+border-top: none;
+}
+.mobile .main-inner, .mobile .footer-inner {
+background-color: #333333;
+}
+.mobile-index-contents {
+color: #cccccc;
+}
+.mobile-link-button {
+background-color: #dd7700;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile .tabs-inner .section:first-child {
+border-top: none;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background-color: #000000;
+color: #ffffff;
+border-top: 1px solid #333333;
+border-bottom: 1px solid #333333;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #333333;
+}
+
+--></style>
+<style id="template-skin-1" type="text/css"><!--
+body {
+min-width: 960px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 960px;
+max-width: 960px;
+_width: 960px;
+}
+.main-inner .columns {
+padding-left: 0;
+padding-right: 0;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0;
+right: 0;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0") -
+parseInt("0") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 0;
+}
+.main-inner .column-left-outer {
+width: 0;
+right: 100%;
+margin-left: -0;
+}
+.main-inner .column-right-outer {
+width: 0;
+margin-right: -0;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+body#layout div.add_widget {
+padding: 8px;
+}
+body#layout div.add_widget a {
+margin-left: 32px;
+}
+--></style>
+
+<script async="true" src="https://www.googletagmanager.com/gtag/js?id=G-41YJZEMMNE"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-41YJZEMMNE');
+      </script>
+<link href="../../../www.blogger.com/dyn-css/authorization50a7.css?targetBlogID=4666717332149573666&amp;zx=763e84ee-5c41-4035-b0fd-01019eb70d3b" media="none" onload="if(media!=&#39;all&#39;)media=&#39;all&#39;" rel="stylesheet" /><noscript><link href='../../../www.blogger.com/dyn-css/authorization50a7.css?targetBlogID=4666717332149573666&amp;zx=763e84ee-5c41-4035-b0fd-01019eb70d3b' rel='stylesheet'/></noscript>
+<meta name="google-adsense-platform-account" content="ca-host-pub-1556223355139109" />
+<meta name="google-adsense-platform-domain" content="blogspot.com" />
+</head>
+<body class="loading mobile variant-dark">
+<div class="navbar no-items section" id="navbar" name="Navbar">
+</div>
+<div class="body-fauxcolumns">
+<div class="fauxcolumn-outer body-fauxcolumn-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="content-fauxcolumns">
+<div class="fauxcolumn-outer content-fauxcolumn-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<div class="content-outer">
+<div class="content-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left content-fauxborder-left">
+<div class="fauxborder-right content-fauxborder-right"></div>
+<div class="content-inner">
+<header>
+<div class="header-outer">
+<div class="header-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left header-fauxborder-left">
+<div class="fauxborder-right header-fauxborder-right"></div>
+<div class="region-inner header-inner">
+<div class="header section" id="header" name="Header"><div class="widget Header" data-version="1" id="Header1">
+<div id="header-inner">
+<div class="titlewrapper">
+<h1 class="title">
+<a href="../../index40aa.html?m=1">
+🕹&#65039; Play Retro Games Online
+</a>
+</h1>
+</div>
+<div class="descriptionwrapper">
+<p class="description"><span>
+</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="header-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</header>
+<div class="tabs-outer">
+<div class="tabs-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left tabs-fauxborder-left">
+<div class="fauxborder-right tabs-fauxborder-right"></div>
+<div class="region-inner tabs-inner">
+<div class="tabs section" id="crosscol" name="Cross-Column"><div class="widget PageList" data-version="1" id="PageList1">
+<h2>Select Gaming Platform and game</h2>
+<div class="widget-content">
+<select id="PageList1_select">
+<option disabled="disabled" hidden="hidden" selected="selected" value>
+(Move to ...)
+</option>
+<option value="../../p/categories.html">Categories</option>
+<option value="../../p/play-ps1-games-online.html">PlayStation (PSX / PS1)</option>
+<option value="../../p/play-dos-games-online.html">MS-DOS / Windows 3.1</option>
+<option value="../../p/play-amiga-games-online.html">Amiga</option>
+<option value="../../p/play-3do-games-online.html">3DO Interactive Multiplayer</option>
+<option value="../../p/play-sega-genesis-games-online.html">SEGA Genesis / Mega Drive</option>
+<option value="../../p/play-sega-master-system-games-online40aa.html">SEGA Master System</option>
+<option value="../../p/play-sega-cd-games-online.html">SEGA CD / Mega-CD</option>
+<option value="../../p/play-sega-game-gear-games-online.html">SEGA Game Gear</option>
+<option value="../../p/play-sega-32x-games-online.html">SEGA 32X</option>
+<option value="../../p/play-sega-saturn-games-online.html">SEGA Saturn</option>
+<option value="../../p/play-nes-games-online.html">Nintendo (NES)</option>
+<option value="../../p/play-snes-games-online.html">Super Nintendo (SNES)</option>
+<option value="../../p/play-gbc-games-online.html">Game Boy Color</option>
+<option value="../../p/play-n64-games-online.html">Nintendo 64</option>
+<option value="../../p/play-nds-games-online.html">Nintendo DS</option>
+<option value="../../p/play-gba-games-online.html">Game Boy Advance</option>
+<option value="../../p/play-atari-2600-games-online.html">Atari 2600</option>
+<option value="../../p/play-atari-7800-games-online.html">Atari 7800</option>
+<option value="../../p/play-atari-jaguar-games-online.html">Atari Jaguar</option>
+<option value="../../p/play-neo-geo-games-online.html">Neo-Geo</option>
+<option value="../../p/play-arcade-machines-games-online.html">Arcade Machines</option>
+<option value="../../p/play-openbor-games-online.html">OpenBOR</option>
+<option value="../../p/play-turbografx-games-online.html">TurboGrafx / PC Engine</option>
+<option value="../../p/play-nec-pc-fx-games-online.html">NEC PC-FX</option>
+<option value="../../p/play-sharp-x68000-games-online.html">Sharp X68000</option>
+<option value="../../p/play-msx-games-online.html">MSX</option>
+<option value="../../p/play-amstrad-games-online.html">Amstrad</option>
+</select>
+<span class="pagelist-arrow">&#9660;</span>
+<div class="clear"></div>
+</div>
+</div></div>
+<div class="tabs no-items section" id="crosscol-overflow" name="Cross-Column 2"></div>
+</div>
+</div>
+<div class="tabs-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="main-outer">
+<div class="main-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left main-fauxborder-left">
+<div class="fauxborder-right main-fauxborder-right"></div>
+<div class="region-inner main-inner">
+<div class="columns fauxcolumns">
+<div class="fauxcolumn-outer fauxcolumn-center-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="fauxcolumn-outer fauxcolumn-left-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="fauxcolumn-outer fauxcolumn-right-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+
+<div class="columns-inner">
+<div class="column-center-outer">
+<div class="column-center-inner">
+<div class="main section" id="main" name="Main"><div class="widget Blog" data-version="1" id="Blog1">
+<div class="blog-posts hfeed">
+<div class="date-outer">
+<div class="date-posts">
+<div class="post-outer">
+<div class="post hentry uncustomized-post-template" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+<meta content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXwEwIm2OQ6udQ5GBB9Up60xZjqAn919BQdIUdQXl84ponZ7reHjqkVysydLrnr_iBiEV95BgnRsyRFQcju0OhFYQtrwlT_JCnVp0JKkfa8n3GDyP9oD0_xC8KPx16FCwSqz2ScE_Rouo/s72-c/tekwar-640.png" itemprop="image_url" />
+<meta content="4666717332149573666" itemprop="blogId" />
+<meta content="6075610396141844826" itemprop="postId" />
+<a name="6075610396141844826"></a>
+<h3 class="post-title entry-title" itemprop="name">
+TekWar (DOS)
+</h3>
+<div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+<div class="post-body entry-content" id="post-body-6075610396141844826" itemprop="articleBody">
+<div align="center"><iframe allowfullscreen="allowfullscreen" frameborder="0" height="474px" marginheight="0px" marginwidth="0px" scrolling="no" src="https://play.retrogames.onl/dos/t/tekwar/tekwar-320.html?m=1" style="border: 0px #FFFFFF none;" width="100%"></iframe></div><link rel="stylesheet" href="../../../play.retrogames.onl/gamesonl40aa.css">
+<script type="text/javascript">
+    cookieChoices = {};
+</script>
+<script type="text/javascript" src="../../../swoopanomalousgardener.com/5f/90/8c/5f908c96c15c81ceb4ff8c24b330c3f4.js"></script>
+<script type="text/javascript" src="../../../swoopanomalousgardener.com/bf/4f/69/bf4f69c874527cbdff07bf38e56b58b1.js"></script>
+<script async="async" data-cfasync="false" src="../../../swoopanomalousgardener.com/9268754bba8c42a2fd7ddd7670e55011/invoke.js"></script>
+<div id="container-9268754bba8c42a2fd7ddd7670e55011"></div><img alt="Tek War" border="0" data-original-height="400" data-original-width="640" src="../../../blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXwEwIm2OQ6udQ5GBB9Up60xZjqAn919BQdIUdQXl/s280/tekwar-640.png" style="clear: right; float: right; margin-bottom: -10px; margin-left: 10px; margin-top: -5px;" title="Tek War" width="280" /><div id="descrgame">
+<div style="text-align: left;"><b>Genre:</b> Action, FPS</div>
+<div style="text-align: left;"><b>Perspective:</b> 1st-person</div>
+<div style="text-align: left;"><b>Gameplay:</b> Shooter</div>
+<div style="text-align: left;"><b>Interface:</b> Direct control</div>
+<div style="text-align: left;"><b>Setting:</b> Cyberpunk / dark sci-fi</div>
+<div style="text-align: left;"><b>Published by:</b> Capstone Software</div>
+<div style="text-align: left;"><b>Developed by:</b> Capstone Software</div>
+<div style="text-align: left;"><b>Released:</b> 1995</div>
+<div style="text-align: left;"><b>Platform:</b> DOS</div></div>
+<img alt="Tekwar control keys" border="0" data-original-height="260" data-original-width="494" src="../../../blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgE0gENwwHE43ITiXjAWe_3UCTgMXBi3dse0vsk2fD/s0/tekwar-control.png" title="Tekwar control keys" width="100%" /><div style="text-align: justify;">The police and drug dealers - a favorite theme of Hollywood movies. And the place is familiar to us, too, although there we have never been. It's a beautiful sunny evergreen Los Angeles, which, again according to the American cinema, crimes committed almost more than the rest of the world combined. Somehow, even shame, if one-third of the city population was completely freaks rapists, serial killers, professional killers and smaller fry such as pimps, and other rabble. And above all this ugliness reigns His Majesty drugs.</div><div style="text-align: justify;">Finally, gaming and computer business seriously engaged in the development of this sad topic. &#171;Intra Corp., Inc&#187;, without further ado, went and made a great cop thriller in the style of action-movie about a tough fight against drug trafficking.</div><div style="text-align: justify;">So, again, Los Angeles, the year 2045. The threat hanging over had once thriving city - "TEK", a new drug, more even mentally active changer brain is extremely powerful in a very short time transforming the very foundations of the human psyche. Almost metropolis divided into spheres of influence of criminal clans, headed by wealthy and influential tech-lords. Until recently, among them was a desperate struggle for the right to sell narcotic poison, and the whole city was divided into seven territories belonging to different clans. Now, however, they temporarily united to work together to teach the same population of the city to the CURRENT and at the same time, joint efforts to put on his knees already weak LAPD. The situation almost got out of control and become extremely dangerous, and perhaps already hopeless.<div class="separator" style="clear: both; text-align: center;"><a style="clear: right; float: right; margin-bottom: 0em; margin-left: 1em;"><img alt="William Shatner&#39;s TekWar CD" border="0" data-original-height="200" data-original-width="320" height="175" src="../../../blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiheQ_qggsim9eFmCcBYqMmXP8SGCJ_oljp845ZKid/s280/tekwar-cd.png" title="William Shatner&#39;s TekWar CD" width="280" /></a></div></div><div style="text-align: justify;">On the unification of the drug mafia informant told police Sonny Hokori clan, the largest grouping tech Lords. The main means by which steel wielding clans - Matrix, a virtual "market", which connects all connected to the computer network of electronic means of communication. And individuals, and megacorporations involved together for a second does not stop the process of exchange, trading with each other and goods, and the most valuable - information. Nicoli Petrovski, famous kiberbiolog and Miyoshi Nakahara, cybernetics, and Nobel laureate, mysteriously disappeared. The basic version of what happened - they were kidnapped, and their knowledge of currently used tech lords to improve capabilities through the dissemination of tech matrix. It can destroy hundreds of thousands of people who use virtual "market" in everyday business. However, if the flow of tech into the Matrix to be stopped. the main problem will be solved. The rest will be just a matter of "police equipment".</div><div style="text-align: justify;">Fortunately, the world in the XXI century is not without good characters. Save the city from utter degradation and end you were called clans. By the way, the fate of the still several times put you very painful steps. You worked in the police, a special department for the fight against drugs, but the career was interrupted rather tragically unjust prosecution for alleged contacts with the tech-clans and time - five years in a cryogenic chamber, placed on a special platform space. Having stayed put, you are returned to Earth and found that now a special agent of a Walter Bascom, head of the detective agency. You have been assigned to study the system of action tek- Lords to using Matrix to destroy their plans. If you succeed in this, thousands of people will avoid the damaging effects of brain tech, fail - addiction spread, but in a cryogenic chamber you do not see ...</div><div style="text-align: justify;">That's such a sad story ...</div><div style="text-align: justify;">Before proceeding directly to the game, a few more general comments.</div><div style="text-align: justify;">We have already mentioned in the previous volumes of the series that &#171;Tekwar&#187; with &#171;Cybermage&#187; and &#171;Witchaven&#187; Today (March 1996) are the most powerful games in the style of 3D-Action. This affects completely around and above all, in graph. The same &#171;Tekwar&#187; has multiple adjustment modes VIDEO MODE, allowing to "disperse" the image to a truly amazing level of detail and clarity. Of course, it is only by purse computers, such as a Pentium-120 or above. However, lowering the picture quality, you can play a very passable and 486 DX2 / 66, but the effect will not be a one ...</div><div style="text-align: justify;">The demo version of the program appeared in mid-1995 and "loose" just shamelessly. However, the authors claimed that the final version of this deficiency will be overcome. what</div><div style="text-align: justify;">Well, in principle, we are not fooled, however, by running &#171;Tekwar&#187;, you are literally pumped out of even the most powerful machines almost all its resources. However, nothing surprising in this, you just have to look at the game. The image is extremely saturated the background - and moving subway trains, and buses, scurrying up and down the streets, and operating fountains and palm trees shown chivayuischesya, etc., etc. With regard to direct actors (and &#171;Tekwar&#187; there are "bad" guys, members of criminal gangs, and "good" guys and gals - peaceful citizens and alert the guards), and so, they are made as if taken with your camcorder, so Picture perfect and natural. For beauty always have to pay, but in the world of computer games is the basic fee - speed.</div><div style="text-align: justify;">So, &#171;Tekwar&#187; - this is one of the few games ahead of its time. And not only in terms of graphics.</div><div style="text-align: justify;">In this thriller practically nothing the unreal. It looks something like today, except for the Matrix, of course. However, all of her special subject. What happens when you find yourself in it, it is radically different from the main game. Completely changed the situation, and you are transported into a completely full of other dangers virtual world.</div><div style="text-align: justify;">The effect of all episodes of the game starts at the metro station. Depending on the scenario, the picture varies considerably. On platforms in some cases quite respectable citizens scurry in the other - the victim lying unconscious tech. Everywhere, including in cars passing trains, walking armed police. Once you pull out a gun, they immediately open fire. At the same time civilians will raise their hands pressed to the ground and beg for mercy (by the way, the surface is the same). Thus, you will immediately be immersed in the real world where not everything is become bandits and to win, it is not necessary to "cut" bursts nalevo- right ... But back to the subway. You can walk around the station, go to the toilet (including, and direct its purpose), to admire its own proud profile in the mirror and, finally, the most important thing - to sit on the train and go to the next station, that there went out to the surface, start their showdown with tek- clans. From the top, you can also come down and go to train on. This here, not quite trivial solution of the game. And you can not run on rails. It's not even that you have a passing train crushed. He just did not have time to do that, because you instantly kill shock.</div><div style="text-align: justify;">However, in the walk in Los Angeles in 2045, we accompany you will no longer be. If you have a &#171;Tekwar&#187; special training program &#171;Tekwar + 7 Bytepatch Trainer&#187;, consider yourself lucky. You can run it, set yourself up, say, UNLIMITED ENERGY (infinite life, in this case), and plenty of trains to the subway, to wander through the beautiful streets of the once ominous and wonderful Los Angeles, while not paying any attention to the provocative sorties tech -boevikov. Surely, for once it is done, since then, in a normal game, stare at the sides time you will not be, because the enemy shoots not rare, and very aptly. And you, in turn, even to the slightest difficulty must lodge an enemy, not a single bullet, at least until such time as you find more powerful weapons you have available at the beginning.</div><h2 style="text-align: justify;">Main menu</h2><div style="text-align: justify;">The game begins with the selection of a scenario in which events will develop further. As mentioned above, the whole area of &#8203;&#8203;Los Angeles is actually owned by the seven major groups, the division of spheres of influence into seven sections.</div><div style="text-align: justify;">At the bottom of the screen you can see the photos of seven tech-Lords:</div><div style="text-align: justify;">1 - MARTY DOLLAR;</div><div style="text-align: justify;">2 - DALLAS DIMARCO;</div><div style="text-align: justify;">3 - CARLYLE ROSSI;</div><div style="text-align: justify;">4 - CONRAD LOWELL;</div><div style="text-align: justify;">5 - SONNY HOKOURI;</div><div style="text-align: justify;">6 - MILES CONNOR;</div><div style="text-align: justify;">7 - JANUS.</div><div style="text-align: justify;">After making your selection (in any order), you are at the metro station and go into the possession of the clan.</div><div style="text-align: justify;">Access Matrix (MATRIX - a window to the top of the screen) is limited to as long as you do not have a corresponding symbol of a mission passed.</div><div style="text-align: justify;">Once on the platform, before starting a long and difficult path, ESC key, you can go to the main menu of the game,</div><div style="text-align: justify;">has the following options.</div><div style="text-align: justify;">NEW GAME - start a new game (in this scenario). The following selection of difficulty levels:</div><div style="text-align: justify;">- EASY - 1000 points of health and consciousness;</div><div style="text-align: justify;">- MEDIUM - 750 points;</div><div style="text-align: justify;">- HARD - 500 points.</div><div style="text-align: justify;">Thus, your life potential on the easy difficulty level will be twice more important than at cruiserweight. (In addition to the points of health and consciousness, each more difficult level differs from the previous increase in the strength and vitality of LOR-tech fighters Dowa groups.)</div><div style="text-align: justify;">LOAD GAME - load a previously saved game with one of the five slots recording.</div><div style="text-align: justify;">SAVE GAME - at any point in your current position can be written to disk for later downloading and continue playing from the selected position.</div><div style="text-align: justify;">OPTIONS - here are a few interface options:</div><div style="text-align: justify;">- MOUSE SENSITIVITY - mouse sensitivity (how quickly the device responds to your commands);</div><div style="text-align: justify;">- SOUND / MUSIC VOLUME - separate scale adjust the volume of sound effects and music;</div><div style="text-align: justify;">- HEAD BOB ON / OFF - On / Off mode, simulating characteristics of human movement. Thus, in the ON state your character as if swinging when walking, etc.</div><div style="text-align: justify;">ABORT - abort the current mission and again to return to the original scene selection.</div><div style="text-align: justify;">Before turning to a description of the buttons of a very rich and very diverse in management capabilities, describe the modes performed by the function keys.</div><div style="text-align: justify;">F1 - a short help screen for the distribution of keys for the main action game.</div><div style="text-align: justify;">F2 - game record on the disc.</div><div style="text-align: justify;">F3 - loading any of the previous entries to continue.</div><div style="text-align: justify;">F4 - abort the current mission.</div><div style="text-align: justify;">F5 - on / off messages (network or modem game).</div><div style="text-align: justify;">F6 - adjust mouse sensitivity mode.</div><div style="text-align: justify;">F7 - scan monitors - screen effect showing that you have raised the subject, or has sustained damage. There are two ways to show it - red flickering on the curb (edge &#8203;&#8203;of the screen) or the red glow of the whole image. F7 and switches these embodiments with each other.</div><div style="text-align: justify;">F8 - menu, adjust the volume of music and special effects.</div><div style="text-align: justify;">F9 - change the brightness of the screen. Some of the "basement" episodes too gloomy, and along the way you often have to adjust the brightness.</div><div style="text-align: justify;">F11 - centering joystick, if selected controller.</div><div style="text-align: justify;">F12 - the removal of images from the screen. In this PCX file extension is formed in the directory of the game.</div><h2 style="text-align: justify;">CONTROL</h2><div style="text-align: justify;">All manipulations in &#171;Tekwar&#187; carried out using the keyboard, however, some basic movements and actions can be performed, if desired, a mouse or joystick.</div><div style="text-align: justify;">UP - go ahead.</div><div style="text-align: justify;">DOWN - to go back.</div><div style="text-align: justify;">LEFT - turn left.</div><div style="text-align: justify;">RIGHT - rotate right.</div><div style="text-align: justify;">- Offset to the left without turning.</div><div style="text-align: justify;">. - Shift to the right without turning.</div><div style="text-align: justify;">LEFT ALT + LEFT / RIGHT - offset without turning in the appropriate direction.</div><div style="text-align: justify;">LEFT SHIFT + cursors - running or fast moving in the selected direction.</div><div style="text-align: justify;">X - jump up.</div><div style="text-align: justify;">X + UP - leap forward and upward.</div><div style="text-align: justify;">S - sit down.</div><div style="text-align: justify;">C + cursors - move around by crawling.</div><div style="text-align: justify;">SPACE - to open the door, raise and use some items to charge energy weapons found in the presence of a source of energy, etc.</div><div style="text-align: justify;">ENTER - to quit the corresponding weapon (grenades and canisters of explosives).</div><div style="text-align: justify;">PAGE UP - look up.</div><div style="text-align: justify;">PAGE DOWN - look down.</div><div style="text-align: justify;">HOME - think back to the direction of "forward".</div><div style="text-align: justify;">LEFT CTRL - get a gun and shoot out ready for battle.</div><div style="text-align: justify;">/ - To remove the weapons.</div><div style="text-align: justify;">TAB - including the electronic card. Your location is indicated by her white arrow pointing in the direction of motion.</div><div style="text-align: justify;">+ - Increase the scale of the map.</div><div style="text-align: justify;">- - Reduce the scale of the map.</div><div style="text-align: justify;">R - turn the rear view mirror. On the left side of the screen there is a special bracket, which at any moment of the game can see what is happening behind you. This mode is extremely useful, especially when you consider that your opponent likes a no-no and even to pretend to be dead to then shoot you in the back. (All this, of course, is good, but the mirror considerably slows down the game.)</div><div style="text-align: justify;">H - display the screen of your health, mind and ammunition (see. Below).</div><div style="text-align: justify;">G - turn on / off the mark sight. Highly recommended to keep this option enabled, since otherwise fall into the enemy will not be easy, even with a small distance.</div><div style="text-align: justify;">I - show the display of items that you are at the moment (appears on the right side of the screen).</div><div style="text-align: justify;">E - statistics show the display where the top row - during your stay in the game, the bottom - Battle your account, ie points scored during the game for the elimination of criminal elements.</div><h3 style="text-align: justify;"><b><span style="color: #990000;">Choose Your Weapons</span></b></h3><div style="text-align: justify;">On weapons in the game will be explained in detail below. We only note that it is pre-selected by pressing the number keys 1 to 9. In this case, you have to prepare to fight it only after a single pressing CTRL.</div><h3 style="text-align: justify;"><b><span style="color: #990000;">When controlling the mouse</span></b></h3><div style="text-align: justify;">- Left button - shooting.</div><div style="text-align: justify;">- Right key - move forward.</div><h2 style="text-align: justify;">HEALTH METER</h2><div style="text-align: justify;">The most important indicator of your status in the game is the display of health consciousness and the available ammunition.</div><div style="text-align: justify;">When you press H, it appears at the bottom left of the slide-out console and constantly shows your current physical condition. Enemy attacks and the fall from a great height and adversely affect the health, and in the mind. If the level of consciousness reaches zero, you will fall into a swoon. If zeroing divisible health - you will perish. Your remaining amount of life energy can be displayed in two ways - digital expression (no console display health) and the corresponding indicator scale is included.</div><div style="text-align: justify;">HEALTH METER has three color bands, a graph showing the state of monitored indicators:</div><div style="text-align: justify;">N - Green - Health;</div><div style="text-align: justify;">C - yellow - consciousness;</div><div style="text-align: justify;">A - blue - the amount of ammunition for the current weapon.</div><h4 style="text-align: justify;">WEAPONS</h4><div style="text-align: justify;">The game has a lot of different types of weapons that can be used with varying degrees of effectiveness. Most of the weapons systems in &#171;Tekwar&#187; ammunition and require recharging. Procure ammunition, rockets and you can recharge your batteries and in the different sectors of the city (even in the subway, on police stations), and taking a much-needed assets have killed your enemies. To compensate for the energy expended, you must find the appropriate source, and then press SPACE.</div><div style="text-align: justify;">1. KRALOV CEG-15 STUNNER - electroshock device, paralyzing the nervous system and leads his opponent unconscious for a short time. Needless to say, this weapon more than humanity, and especially they should not get involved (including with whom you generally have to deal with).</div><div style="text-align: justify;">2. With the &amp; W MODEL 2040 - semi-automatic pistol that fires caseless bullets. It is a favorite weapon of the majority of mercenaries tech Lords, so the ammunition to the C &amp; W in 2040 have no problems. You will find them in abundance from slain enemies.</div><div style="text-align: justify;">3. SHRIKE DBK - This weapon fires a powerful energy charge that burst on impact, turning the unfortunate victim in a bloody mess. Energy reserve SHRIKE DBK is not infinite, and it must be recharged by means of special devices.</div><div style="text-align: justify;">4. ORLOW 34 S - a more powerful version of the previous weapons - semiautomatic. As SHRIKE, ORLOV energized, without which long shooting from it is impossible.</div><div style="text-align: justify;">5. EMP ANTI ANDROID PISTOL - Fires electromagnetic pulses aimed at to paralyze robots.</div><div style="text-align: justify;">6. FORCE CHARGE - cans with liquid plastic explosives fitted with a kinetic detonator. This weapon is not fired, and then explodes and catches after colliding with a target or surface.</div><div style="text-align: justify;">7. STUN GRENADE - grenades. Just as FORCE CHARGE,</div><div style="text-align: justify;">they did not fire back and manually throw into the enemy.</div><div style="text-align: justify;">8. FLAMETHROWER - a special gun that resembles a flame thrower. Fires special chemical compound that ignites when exposed to air. The liquid has the property to envelop the victim and burning, causing her terrible burns injury. To charge FLAMETHROWER required fuel cans.</div><div style="text-align: justify;">9. ROCKET LAUNCHER - Rocket Launcher. The most elegant and lethal weapon in the game. Fires short-range missiles from the plant, placed on the shoulder of a soldier. An explosion occurs in a collision with the aim of destroying it, and itself, and that is in the immediate vicinity. The original version of this rocket launcher was used to control the aircraft. To do this, search engines were installed missiles homing heat, but then they have been modified to something with which you and will have to deal.</div><div style="text-align: justify;">Note: flamethrower and grenade launcher at the same time you can not bear!</div><h2 style="text-align: justify;">MATRIX</h2><div style="text-align: justify;">Here, amid the chaos of data, the Consortium put the password that provides access to its inner sanctum. However, the code has not been entrusted to one person - it is divided into seven parts, each of which belongs to the leader of one of the criminal clans. Thus, to achieve complete victory in the game, you will need to visit all the drug mafia bosses, and to free the world of the mother liquor, required, respectively, to enter the matrix and find all seven pieces password.</div><h3 style="text-align: justify;"><b><span style="color: #990000;">Matrix station</span></b></h3><div style="text-align: justify;">To enter the Matrix, you have to get from the Lord-tech special character that activates matrix station that provides access directly to the Matrix itself. Destroying the next boss and pick symbol, enter the Matrix and press SPACE - you will find yourself in a virtual space communication system. At each level is part of the password Consortium. When you collect all seven pieces, opened last journey, which will take you to the citadel tech and, ultimately - to win.</div><div style="text-align: justify;">Being inside the Matrix, you get the maximum possible for the human psyche of information from various sensors. To prevent irreversible changes in your nervous system, matrix station restores you when vitality is reduced. MATE competition (display MATRIX TIME ENERGY CONTINUUM) shows the amount of time / energy left before the station is forced to throw you. Standard time of stay is reduced by the loss of part of your vitality, but can be increased by using the items. found inside the Matrix.</div><div style="text-align: justify;">MATE competition is activated by pressing M.</div><h3 style="text-align: justify;"><span style="color: #990000;"><b>Control in Matrix</b></span></h3><div style="text-align: justify;">UP - forward.</div><div style="text-align: justify;">DOWN - backward.</div><div style="text-align: justify;">LEFT - turn left.</div><div style="text-align: justify;">RIGHT - turn to the right.</div><div style="text-align: justify;">X - rise.</div><div style="text-align: justify;">C - descend.</div><div style="text-align: justify;">I-SHIFT H / C - to accelerate the ascent or descent.</div><div style="text-align: justify;">CTRL - shot.</div><div style="text-align: justify;">SPACE - open vnutritonnelnye wall partitions.</div><div style="text-align: justify;">Control keys look here are the same as in the normal game. The same applies to the map of the maze.</div><h2 style="text-align: justify;">Characters and enemies</h2><div style="text-align: justify;">Although they are forced to live in a world of cruelty and violence that reigns in Los Angeles in 2045, no part in resistance tech lords citizens do not accept. They generally try to stay away from the confrontation of clans and police continuing to engage in their own affairs more or less normally.</div><h3 style="text-align: justify;"><span style="color: #990000;"><b>Police</b></span></h3><div style="text-align: justify;">After losing the war, called "Tech", police in Los Angeles have no good weapons, money or a large number of fighters in its ranks. Seeing as their comrades are killed every day by the bullets of mercenaries, the line of duty, the remaining police are hated and tech and tech-lords, and especially those of corrupt policemen who made a deal with the Consortium. And as for your shoulders already has five years of his release, even if undeserved, police with great pleasure shoot you at the first opportunity. They only needed an excuse. And most important of them - your ready for battle weapons. Once you remove it, you immediately begin to trouble with the law, and the first to produce documents no one asks - all at once shoot. Keep this in mind and not strumming weapons nearby if there is no real enemies.</div><h3 style="text-align: justify;"><b><span style="color: #990000;">Robots kamikaze</span></b></h3><div style="text-align: justify;">These mechanical killer targeting the pre-programmed objects and try to touch them. This set them sensitive detonators cause a massive explosion, taking with them, and the robot, and sacrifice. The main disadvantage of the fight against suicide bombers is that they can look and how TSC mercenaries, and the police, and even the citizens. In addition, light weapons androids hit very hard.</div><h3 style="text-align: justify;"><span style="color: #990000;"><b>Tech mercenaries</b></span></h3><div style="text-align: justify;">The wealth and power of the Consortium tech allows them to hire their service agents that are far superior police forces and weapons, and particularly the number. These soldiers loyal lords serve them selflessly, performing for them all the dirty work, which usually takes highly organized criminal clans. Mercenaries have a variety of weapons and well-equipped to successfully affect all aspects of urban life. This eliminated any threat of the drug market as quickly and brutally.</div><div style="text-align: justify;">Soldiers Huck-lordovskih detachments absolutely ruthless and devoid of whatever emotions. Without the slightest hesitation, they are ready to shoot any citizen who turned in their way. So, perhaps, the city's population is steadily declining, while remaining totally indifferent and not to assist the authorities. As a result, ordinary citizen, that he was safe, relies less on the police as to, if possible, good relations with the mercenaries.</div><h3 style="text-align: justify;"><b><span style="color: #990000;">Tech-liter horde</span></b></h3><div style="text-align: justify;">It is true, the most serious force in the greater Los Angeles area. Seven local chiefs established absolute control over the implementation of tech. When the city authorities have lost the battle, the Consortium joined together tech Lords sharply increased turnover and drew strength Matrix to eventually expand its influence in the world. As the most powerful of the bosses, Sonny hokuryu is the head of the most powerful groups behind the plan spread through the matrix tech.</div><div style="text-align: justify;">We hope that with the appearance of your business in the city will go smoothly and, ultimately, to Tecom and tech-lords will be finished.</div>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<div class="post-footer-line post-footer-line-1">
+<span class="post-author vcard">
+</span>
+<span class="post-timestamp">
+</span>
+<span class="post-comment-link">
+</span>
+</div>
+<div class="post-footer-line post-footer-line-2">
+</div>
+</div>
+</div>
+<div class="comments" id="comments">
+<a name="comments"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="blog-pager" id="blog-pager">
+<div class="mobile-link-button" id="blog-pager-newer-link">
+<a class="blog-pager-newer-link" href="judge-dredd-dos40aa.html?m=1" id="Blog1_blog-pager-newer-link" title="Newer Post">&lsaquo;</a>
+</div>
+<div class="mobile-link-button" id="blog-pager-older-link">
+<a class="blog-pager-older-link" href="paperboy-2-dos40aa.html?m=1" id="Blog1_blog-pager-older-link" title="Older Post">&rsaquo;</a>
+</div>
+<div class="mobile-link-button" id="blog-pager-home-link">
+<a class="home-link" href="../../index40aa.html?m=1">Home</a>
+</div>
+<div class="mobile-desktop-link">
+<a class="home-link" href="tekwar-dose675.html?m=0">View web version</a>
+</div>
+</div>
+<div class="clear"></div>
+</div></div>
+</div>
+</div>
+<div class="column-left-outer">
+<div class="column-left-inner">
+<aside>
+</aside>
+</div>
+</div>
+<div class="column-right-outer">
+<div class="column-right-inner">
+<aside>
+</aside>
+</div>
+</div>
+</div>
+<div style="clear: both"></div>
+
+</div>
+
+</div>
+</div>
+<div class="main-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<footer>
+<div class="footer-outer">
+<div class="footer-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left footer-fauxborder-left">
+<div class="fauxborder-right footer-fauxborder-right"></div>
+<div class="region-inner footer-inner">
+<div class="foot no-items section" id="footer-1"></div>
+
+<div class="foot section" id="footer-3" name="Footer"><div class="widget Attribution" data-version="1" id="Attribution1">
+<div class="widget-content" style="text-align: center;">
+Powered by <a href="https://www.blogger.com/" target="_blank">Blogger</a>.
+</div>
+<div class="clear"></div>
+</div></div>
+</div>
+</div>
+<div class="footer-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</footer>
+
+</div>
+</div>
+<div class="content-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+<script type="text/javascript" src="../../../www.blogger.com/static/v1/widgets/523887051-widgets.js"></script>
+<script type="text/javascript">
+var BLOG_BASE_IMAGE_URL = 'https://resources.blogblog.com/img';var BLOG_LANG_DIR = 'ltr';window['__wavt'] = 'AOuZoY77R9Eb4FwMQaKbX6XHI7OfurNIrQ:1715922703243';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d4666717332149573666','tekwar-dos6f8f.html?m\x3d1','4666717332149573666');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '4666717332149573666', 'title': '\ud83d\udd79\ufe0f Play Retro Games Online', 'url': 'https://www.retrogames.onl/2021/02/tekwar-dos.html?m\x3d1', 'canonicalUrl': 'https://www.retrogames.onl/2021/02/tekwar-dos.html', 'homepageUrl': 'https://www.retrogames.onl/?m\x3d1', 'searchUrl': 'https://www.retrogames.onl/search', 'canonicalHomepageUrl': 'https://www.retrogames.onl/', 'blogspotFaviconUrl': 'https://www.retrogames.onl/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': true, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': 'G-41YJZEMMNE', 'analytics4': true, 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': true, 'isMobileRequest': true, 'mobileClass': ' mobile', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22\ud83d\udd79\ufe0f Play Retro Games Online - Atom\x22 href\x3d\x22https://www.retrogames.onl/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22\ud83d\udd79\ufe0f Play Retro Games Online - RSS\x22 href\x3d\x22https://www.retrogames.onl/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22\ud83d\udd79\ufe0f Play Retro Games Online - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/4666717332149573666/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22\ud83d\udd79\ufe0f Play Retro Games Online - Atom\x22 href\x3d\x22https://www.retrogames.onl/feeds/6075610396141844826/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'boqCommentIframeForm': true, 'loginRedirectParam': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/8a8c39e8754b0ef7', 'plusOneApiSrc': 'https://apis.google.com/js/platform.js', 'disableGComments': true, 'interstitialAccepted': false, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'item', 'postId': '6075610396141844826', 'postImageThumbnailUrl': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXwEwIm2OQ6udQ5GBB9Up60xZjqAn919BQdIUdQXl84ponZ7reHjqkVysydLrnr_iBiEV95BgnRsyRFQcju0OhFYQtrwlT_JCnVp0JKkfa8n3GDyP9oD0_xC8KPx16FCwSqz2ScE_Rouo/s72-c/tekwar-640.png', 'postImageUrl': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXwEwIm2OQ6udQ5GBB9Up60xZjqAn919BQdIUdQXl84ponZ7reHjqkVysydLrnr_iBiEV95BgnRsyRFQcju0OhFYQtrwlT_JCnVp0JKkfa8n3GDyP9oD0_xC8KPx16FCwSqz2ScE_Rouo/s320/tekwar-640.png', 'pageName': 'TekWar (DOS)', 'pageTitle': '\ud83d\udd79\ufe0f Play Retro Games Online: TekWar (DOS)', 'metaDescription': 'Play William Shatner\x27s TekWar / Tek War game online MS-DOS (DOSBox) emulator.'}}, {'name': 'features', 'data': {}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'Simple', 'localizedName': 'Simple', 'isResponsive': false, 'isAlternateRendering': true, 'isCustom': false, 'variant': 'dark', 'variantId': 'dark'}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': true, 'title': 'TekWar (DOS)', 'description': 'Play William Shatner\x27s TekWar / Tek War game online MS-DOS (DOSBox) emulator.', 'featuredImage': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXwEwIm2OQ6udQ5GBB9Up60xZjqAn919BQdIUdQXl84ponZ7reHjqkVysydLrnr_iBiEV95BgnRsyRFQcju0OhFYQtrwlT_JCnVp0JKkfa8n3GDyP9oD0_xC8KPx16FCwSqz2ScE_Rouo/s320/tekwar-640.png', 'url': 'https://www.retrogames.onl/2021/02/tekwar-dos.html?m\x3d1', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 6075610396141844826}}]);
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'crosscol', document.getElementById('PageList1'), {'title': 'Select Gaming Platform and game', 'links': [{'isCurrentPage': false, 'href': '/p/categories.html', 'title': 'Categories'}, {'isCurrentPage': false, 'href': '/p/play-ps1-games-online.html', 'title': 'PlayStation (PSX / PS1)'}, {'isCurrentPage': false, 'href': '/p/play-dos-games-online.html', 'title': 'MS-DOS / Windows 3.1'}, {'isCurrentPage': false, 'href': '/p/play-amiga-games-online.html', 'title': 'Amiga'}, {'isCurrentPage': false, 'href': '/p/play-3do-games-online.html', 'title': '3DO Interactive Multiplayer'}, {'isCurrentPage': false, 'href': '/p/play-sega-genesis-games-online.html', 'title': 'SEGA Genesis / Mega Drive'}, {'isCurrentPage': false, 'href': '/p/sega-master-system-play-online.html', 'title': 'SEGA Master System'}, {'isCurrentPage': false, 'href': '/p/play-sega-cd-games-online.html', 'title': 'SEGA CD / Mega-CD'}, {'isCurrentPage': false, 'href': '/p/play-sega-game-gear-games-online.html', 'title': 'SEGA Game Gear'}, {'isCurrentPage': false, 'href': '/p/play-sega-32x-games-online.html', 'title': 'SEGA 32X'}, {'isCurrentPage': false, 'href': '/p/play-sega-saturn-games-online.html', 'title': 'SEGA Saturn'}, {'isCurrentPage': false, 'href': '/p/play-nes-games-online.html', 'title': 'Nintendo (NES)'}, {'isCurrentPage': false, 'href': '/p/play-snes-games-online.html', 'title': 'Super Nintendo (SNES)'}, {'isCurrentPage': false, 'href': '/p/play-gbc-games-online.html', 'title': 'Game Boy Color'}, {'isCurrentPage': false, 'href': '/p/play-n64-games-online.html', 'title': 'Nintendo 64'}, {'isCurrentPage': false, 'href': '/p/play-nds-games-online.html', 'title': 'Nintendo DS'}, {'isCurrentPage': false, 'href': '/p/play-gba-games-online.html', 'title': 'Game Boy Advance'}, {'isCurrentPage': false, 'href': '/p/play-atari-2600-games-online.html', 'title': 'Atari 2600'}, {'isCurrentPage': false, 'href': '/p/play-atari-7800-games-online.html', 'title': 'Atari 7800'}, {'isCurrentPage': false, 'href': '/p/play-atari-jaguar-games-online.html', 'title': 'Atari Jaguar'}, {'isCurrentPage': false, 'href': '/p/play-neo-geo-games-online.html', 'title': 'Neo-Geo'}, {'isCurrentPage': false, 'href': '/p/play-arcade-machines-games-online.html', 'title': 'Arcade Machines'}, {'isCurrentPage': false, 'href': '/p/play-openbor-games-online.html', 'title': 'OpenBOR'}, {'isCurrentPage': false, 'href': '/p/play-turbografx-games-online.html', 'title': 'TurboGrafx / PC Engine'}, {'isCurrentPage': false, 'href': '/p/play-nec-pc-fx-games-online.html', 'title': 'NEC PC-FX'}, {'isCurrentPage': false, 'href': '/p/play-sharp-x68000-games-online.html', 'title': 'Sharp X68000'}, {'isCurrentPage': false, 'href': '/p/play-msx-games-online.html', 'title': 'MSX'}, {'isCurrentPage': false, 'href': '/p/play-amstrad-games-online.html', 'title': 'Amstrad'}], 'mobile': true, 'showPlaceholder': true, 'hasCurrentPage': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'mobile': true}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', document.getElementById('Attribution1'), {}, 'displayModeFull'));
+</script>
+<script src="authCheck.js"></script>
+<script src="authCheck.js"></script>
+</body>
+
+<!-- Mirrored from www.retrogames.onl/2021/02/tekwar-dos.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 May 2024 17:46:44 GMT -->
+</html>

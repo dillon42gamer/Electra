@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="keywords" content="front-end web developer, unblocked, games, google sites, unblocked games mom, ublocked, code, coding, programmer, development, javascript, jquery, bootstrap, sass, less, git" />
+  <meta property="og:title" content="this is my attempt at a game website" />
+  <meta property="og:site_name" content="whatismyip.com" />
+  <meta property="og:description" content="this is my attempt at a game website" />
+  <meta name="description" content="this is my attempt at a game website" />
+  <meta name="author" content="what" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Electra</title>
+  <style>
+    .trail {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+    }
+    .lock-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      z-index: 1000;
+    }
+    .lock-screen button {
+      cursor: pointer;
+      background-color: #22c55e;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 16px;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body style="background-color: #121212; color: #ffffff; font-family: sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+  <div id="lockScreen" class="lock-screen" style="display: none;">
+    <div>You're locked out</div>
+    <button onclick="generateDeviceId()">Generate Device ID</button>
+    <div id="deviceIdDisplay" style="margin-top: 20px; font-size: 0.8em;"></div>
+  </div>
+  <h1 id="welcomeMessage" style="font-size: 3em; text-align: center; display: none;">Welcome</h1>
+  <span id="subtitle" style="font-size: 1.5em; display: none;">...</span>
+  <p id="content" style="text-align: center; max-width: 600px; margin: 20px auto; display: none;">
+    this is my attempt at a game website.<br />
+    <a href="/projects.html" style="text-decoration: none;"><button style="cursor: pointer; background-color: #22c55e; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 20px; margin-top: 20px;">Start playing!</button></a><br />
+    <br />
+    <a href="/misc.html" style="text-decoration: none;"><button style="cursor: pointer; background-color: #b625cc; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 20px; margin-top: 5px;">Tools and settings</button></a>
+  </p>
+  <p id="footer" style="text-align: center; max-width: 600px; margin: 20px auto; display: none;">
+    &copy; me, and i have no rights(jk)<br /><br />
+    im bored
+  </p>
+  <script src="/js/main.js"></script>
+  <script src="/js/subtitle.js"></script>
+  <script>
+    const trailLength = 10;
+    const trailElements = [];
+    for (let i = 0; i < trailLength; i++) {
+      const div = document.createElement("div");
+      div.classList.add("trail");
+      document.body.appendChild(div);
+      trailElements.push(div);
+    }
+    let mousePosX = 0;
+    let mousePosY = 0;
+    document.addEventListener("mousemove", (event) => {
+      mousePosX = event.clientX;
+      mousePosY = event.clientY;
+    });
+    function animateTrail() {
+      for (let i = 0; i < trailElements.length; i++) {
+        const trailElement = trailElements[i];
+        trailElement.style.left = `${mousePosX}px`;
+        trailElement.style.top = `${mousePosY}px`;
+        mousePosX += (mousePosX - parseFloat(trailElement.style.left || 0)) * 0.1;
+        mousePosY += (mousePosY - parseFloat(trailElement.style.top || 0)) * 0.1;
+      }
+      requestAnimationFrame(animateTrail);
+    }
+    animateTrail();
+
+    // Function to generate device ID
+    function generateDeviceId() {
+      const deviceId = 'device-' + Math.random().toString(36).substr(2, 9);
+      localStorage.setItem('deviceId', deviceId);
+      document.getElementById('deviceIdDisplay').innerText = 'Your Device ID is: ' + deviceId;
+    }
+
+    // Function to check if device ID is registered
+    async function checkDeviceId() {
+      const response = await fetch('/deviceid.json');
+      const deviceIds = await response.json();
+      const deviceId = localStorage.getItem('deviceId');
+      if (!deviceId || !deviceIds.includes(deviceId)) {
+        document.getElementById('lockScreen').style.display = 'flex';
+      } else {
+        document.getElementById('lockScreen').style.display = 'none';
+        document.getElementById('welcomeMessage').style.display = 'block';
+        document.getElementById('subtitle').style.display = 'block';
+        document.getElementById('content').style.display = 'block';
+        document.getElementById('footer').style.display = 'block';
+      }
+    }
+
+    checkDeviceId();
+  </script>
